@@ -1,66 +1,10 @@
-## Foundry
+## TOKEN FACTORY
+This is an ERC20 token factory suite, for creating ERC20 tokens and also the token Point of sales.
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+TOKEN FACTORY Consist of :
 
-Foundry consists of:
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- ** Token Creation & Initialization ** : This allow users to create and initialize tokens with different meta data such as the token name , symbol(TICkER), decimals.
+- ** Non Fixed total supply** :This simply means the total supply of every tokens is determined by the subsequent creation (minting ) and burning of tokens.
+- ** Ownable** : This ERC20 token is also ownable and the ownership can be granted also.
+- ** Token Point Sales** - The Token point of sales allows the purchase and sales of token by the owner to the  token consumers or holders.
